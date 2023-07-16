@@ -13,7 +13,7 @@ const ContactForm = () => {
     e.preventDefault();
     setIsSending(true);
 
-    emailjs.send(local?.env?.SERVICE_KEY, local?.env?.TEMPLATE_KEY,{
+    emailjs.send(process.env.NEXT_PUBLIC_SERVICE_ID, process.env.NEXT_PUBLIC_TEMPLATE_ID,{
       from_name: name,
       to_name: "kunal shokeen",
       from_email: email,
