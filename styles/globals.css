@@ -2,26 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: "caveat";
+  src: url('../font/Caveat/static/Caveat-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@font-face {
+  font-family: "DM sans";
+  src: url('../font/DM_Sans/static/DMSans-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+  
+@font-face {
+  font-family: "DM sans";
+  src: url('../font/DM_Sans/static/DMSans-ExtraBold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+  
+@font-face {
+  font-family: "DM sans";
+  src: url('../font/DM_Sans/static/DMSans-MediumItalic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color:#000;
+  font-family: 'DM sans' , sans-serif;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}  
+
+.italic {
+  font-family: 'caveat' , sans-serif;
+  font-weight: normal;
+  font-style: italic;
 }
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'DM sans' , sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.button{
+  @apply bg-gradient-to-tr from-[#0064FF] to-[#018DF4] flex items-center justify-center py-2 px-4 cursor-pointer font-semibold rounded-xl hover:scale-95 hover:bg-gradient-to-br outline-none transition-all duration-200 text-white md:min-h-fit min-h-fit
+}
+
