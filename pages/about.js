@@ -11,25 +11,25 @@ const router = useRouter();
       <div className="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-16">
         <div className="max-w-xs">
           <img
-            src="https://via.placeholder.com/400"
+            src="/ourMission.jpg"
             alt="Illustration"
-            className="w-full rounded-lg shadow-lg"
+            className="w-full rounded-lg shadow-lg h-[200px]"
           />
           <p className="text-center mt-2">Our Vision</p>
         </div>
         <div className="max-w-xs">
           <img
-            src="https://via.placeholder.com/400"
+            src="/team.jpg"
             alt="Illustration"
-            className="w-full rounded-lg shadow-lg"
+            className="w-full rounded-lg shadow-lg h-[200px]"
           />
           <p className="text-center mt-2">Meet the Team</p>
         </div>
         <div className="max-w-xs">
           <img
-            src="https://via.placeholder.com/400"
+            src="/serving.jpg"
             alt="Illustration"
-            className="w-full rounded-lg shadow-lg"
+            className="w-full rounded-lg shadow-lg h-[200px]"
           />
           <p className="text-center mt-2">Serving the People</p>
         </div>
@@ -47,7 +47,7 @@ const router = useRouter();
           facilisis faucibus. Phasellus ut purus mauris.
         </p>
       </div>
-      <div className="button" onClick={() => router.push('/')} >Go back to Homescreen</div>
+      <div className="button mt-4" onClick={() => router.push('/')} >Go back to Homescreen</div>
     </div>
   );
 };

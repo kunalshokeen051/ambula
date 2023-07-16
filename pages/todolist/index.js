@@ -45,8 +45,8 @@ const TodoList = () => {
   };
 
   return (
-    <div className="w-full min-h-[calc(100vh-80px)] flex justify-center items-center">
-      <div className="border-4 max-w-[400px] mx-auto p-4">
+    <div className="w-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-rose-100 to-teal-100 min-h-[calc(100vh-80px)] flex justify-center items-center">
+      <div className="border-4 border-black/50 rounded-sm w-full mx-4  md:w-[500px] md:mx-auto p-4">
         <h1 className="text-3xl font-bold mb-4">Todo List</h1>
 
         <form onSubmit={handleTaskSubmit} className="mb-4">
@@ -54,12 +54,12 @@ const TodoList = () => {
             type="text"
             value={newTask}
             onChange={handleTaskChange}
-            className="border border-gray-300 rounded-md px-4 py-2 w-full"
+            className="border border-black rounded-md px-4 py-2 w-full"
             placeholder="Add a new task..."
           />
           <button
             type="submit"
-            className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md mt-2"
+            className="bg-blue-500 hover:bg-blue-600 text-black button font-bold py-2 px-4 rounded-md mt-2"
           >
             Add Task
           </button>
