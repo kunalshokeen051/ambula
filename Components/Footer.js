@@ -6,7 +6,7 @@ const Footer = () => {
   const router = useRouter();
 
   return (
-    <div className='w-full bg-black/70 md:h-[80px] py-4 h-fit'>
+    <div className='w-full bg-slate-600 md:h-[80px] py-4 h-fit'>
       <div className="flex h-full items-center">
         <div className="flex md:flex-row flex-col items-center px-4 md:gap-10 gap-4 h-full w-1/2 text-white text-xl">
           <h3  onClick={() =>{router.push("/home")}} className='hover:text-blue cursor-pointer transition-all duration-300 '>Our Products</h3>

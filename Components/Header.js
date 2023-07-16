@@ -20,9 +20,11 @@ const Header = () => {
     <div className="button text-xl" onClick={() =>{router.push('/home')}}>
     Home
     </div>
+    <a href="https://kunalshokeen.tech/" target='_blank' className="">
     <div className=' border-2 border-blue p-2 hover:bg-blue hover:text-white transition-all duration-300 ease-in rounded-xl text-sm md:text-xl' >
-      <a href="https://kunalshokeen.tech/" target='_blank' className="">Dev Contact</a>
+     Dev Contact
     </div>
+    </a>
     </div>
     </div>
   )

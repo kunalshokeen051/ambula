@@ -6,7 +6,7 @@ const AboutUs = () => {
 const router = useRouter();
 
   return (
-    <div className="flex flex-col items-center justify-center py-10">
+    <div className="flex flex-col min-h-[calc(100vh-80px)] items-center justify-center py-10">
       <h2 className="text-3xl font-bold mb-4">About Us</h2>
       <div className="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-16">
         <div className="max-w-xs">
