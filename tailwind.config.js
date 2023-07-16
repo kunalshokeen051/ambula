@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        blue:'#D8283C'
+        blue:'#0165FE'
       },
       backgroundImage: {
         'coming-soon': "url('/comingSoon.svg')",
