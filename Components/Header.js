@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <div className='w-full h-[80px] flex items-center md:px-8 px-2 justify-between border-2'>
     <Image
-    className='cursor-pointer md:p-0 p-4'
+    className='cursor-pointer md:p-0 py-4'
     onClick={() => router.push('/')}
     src={'/logo.png'}
         width={200}

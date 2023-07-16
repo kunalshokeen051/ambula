@@ -17,7 +17,7 @@ const Home = () => {
           </div>
           {/* {card END} */}
           {/* {card start} */}
-          <div className="md:w-1/3 w-full rounded-lg duration-300 ease-in h-fit border-2  hover:scale-95 hover:bg-blue/60 hover:border-none" onClick={() =>{router.push('/shoppingCart')}}>
+          <div className="md:w-1/3 w-full rounded-lg duration-300 ease-in h-[300px] border-2  hover:scale-95 hover:bg-blue/60 hover:border-none" onClick={() =>{router.push('/shoppingCart')}}>
             <img src="/shopping.svg" alt="task" className='p-4 w-full md:h-full h-2/3' />
             <h3 className='text-xl font-semibold m-4'>Shopping List App</h3>
           </div>
